@@ -7,8 +7,3 @@ class CreateSongs < ActiveRecord::Migration[4.2]
     end
   end
 end
-
-class Song < ActiveRecord::Base
-  belongs_to :artist
-  belongs_to :genre
-end
