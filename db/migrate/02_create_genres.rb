@@ -5,3 +5,8 @@ class CreateGenres < ActiveRecord::Migration[4.2]
     end
   end
 end
+
+class Genre < ActiveRecord::Base
+  has_many :songs
+  has_many :artists, through: :songs
+end
